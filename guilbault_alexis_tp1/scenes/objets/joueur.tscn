@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bntud7twsv0pf"]
+[gd_scene load_steps=9 format=3 uid="uid://bntud7twsv0pf"]
 
 [ext_resource type="Script" uid="uid://x4hlb2x2e4mr" path="res://scenes/objets/joueur.gd" id="1_lji0l"]
 [ext_resource type="Texture2D" uid="uid://ci0hjeys4j1y7" path="res://assets/images/bike_roll.png" id="1_r36ky"]
+[ext_resource type="AudioStream" uid="uid://cex3vp72gyha" path="res://assets/audio/sons/sfx_drive.mp3" id="3_6i1r8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uj1k6"]
 atlas = ExtResource("1_r36ky")
@@ -46,3 +47,8 @@ script = ExtResource("1_lji0l")
 position = Vector2(3.8147e-06, 0)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_qqscv")
+frame = 1
+frame_progress = 0.243418
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6i1r8")
